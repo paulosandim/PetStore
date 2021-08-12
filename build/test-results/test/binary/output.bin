@@ -11,12 +11,12 @@
 Multiparts:		<none>
 Body:
 {
-    "id": 0,
+    "id": 156565692,
     "category": {
         "id": 0,
         "name": "dog"
     },
-    "name": "Caramelo",
+    "name": "Narcejo",
     "photoUrls": [
         "string"
     ],
@@ -31,7 +31,7 @@
     "status": "available"
 }
 HTTP/1.1 200 OK
-%Date: Thu, 12 Aug 2021 01:31:05 GMT
+%Date: Thu, 12 Aug 2021 23:21:03 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -41,12 +41,12 @@
  Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 9223372000001117971,
+    "id": 156565692,
     "category": {
         "id": 0,
         "name": "dog"
     },
-    "name": "Caramelo",
+    "name": "Narcejo",
     "photoUrls": [
         "string"
     ],
