@@ -6,6 +6,7 @@ package petstore;
 
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.is;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -39,6 +40,8 @@ public class Pet {
         .then()
                 .log().all()
                 .statusCode(200)
+                .body("name", is("Narcejo"))
+                .body("status", is("available"))
         ;
     }
 
