@@ -3,14 +3,15 @@ package petstore;
 
 // bibliotecas
 
-
 import org.testng.annotations.Test;
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.is;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.Matchers.contains;
 
 // classe
 public class Pet {
@@ -42,6 +43,8 @@ public class Pet {
                 .statusCode(200)
                 .body("name", is("Narcejo"))
                 .body("status", is("available"))
+                .body("category.name", is("dog"))
+                .body("tags.name", contains("sta"))
         ;
     }
 
