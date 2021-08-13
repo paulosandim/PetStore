@@ -1,0 +1,18 @@
+{
+  "id": 156565692,
+  "category": {
+    "id": 66,
+    "name": "dog"
+  },
+  "name": "Nana",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 2021,
+      "name": "sta"
+    }
+  ],
+  "status": "sold"
+}
