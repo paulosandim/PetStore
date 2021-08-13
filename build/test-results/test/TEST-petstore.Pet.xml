@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="petstore.Pet" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-12T23:40:42" hostname="DESKTOP-CU4KNEF" time="3.143">
+<testsuite name="petstore.Pet" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-13T00:20:09" hostname="DESKTOP-CU4KNEF" time="4.031">
   <properties/>
-  <testcase name="incluirPet" classname="petstore.Pet" time="3.143"/>
+  <testcase name="incluirPet" classname="petstore.Pet" time="2.956"/>
+  <testcase name="consultarPet" classname="petstore.Pet" time="1.071"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -17,7 +18,7 @@ Body:
 {
     "id": 156565692,
     "category": {
-        "id": 0,
+        "id": 66,
         "name": "dog"
     },
     "name": "Narcejo",
@@ -33,7 +34,7 @@ Body:
     "status": "available"
 }
 HTTP/1.1 200 OK
-Date: Thu, 12 Aug 2021 23:40:44 GMT
+Date: Fri, 13 Aug 2021 00:20:12 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -45,7 +46,7 @@ Server: Jetty(9.2.9.v20150224)
 {
     "id": 156565692,
     "category": {
-        "id": 0,
+        "id": 66,
         "name": "dog"
     },
     "name": "Narcejo",
@@ -60,6 +61,47 @@ Server: Jetty(9.2.9.v20150224)
     ],
     "status": "available"
 }
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/156565692
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 13 Aug 2021 00:20:13 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 156565692,
+    "category": {
+        "id": 66,
+        "name": "dog"
+    },
+    "name": "Narcejo",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 2021,
+            "name": "sta"
+        }
+    ],
+    "status": "available"
+}
+O token é dog
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
